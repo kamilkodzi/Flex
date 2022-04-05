@@ -1,0 +1,46 @@
+body {
+  background-color: antiquewhite;
+}
+
+.flexbox-container {
+  display: flex;
+  border: 2px solid orange;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flexbox-item {
+  border-radius: 1rem;
+  box-shadow: 5px 5px 50px rgb(114, 107, 107);
+  min-width: 200px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+  transition: all 200ms ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexbox-item-1 {
+  min-height: 100px;
+}
+.flexbox-item-2 {
+  min-height: 200px;
+}
+.flexbox-item-3 {
+  min-height: 100px;
+}
+
+.flexbox-item:hover {
+  transform: translateY(5px);
+  transform: scale(1.05);
+  background-color: #333;
+}
+
+.flexbox-item:hover span {
+  color: antiquewhite;
+}
+
+.flexbox-item span {
+  font-size: 4rem;
+  transition: all 200ms ease-in;
+}
